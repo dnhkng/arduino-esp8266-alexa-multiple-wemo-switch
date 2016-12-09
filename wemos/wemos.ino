@@ -25,8 +25,8 @@ void dLightsOn();
 void dLightsOff();
 
 // Change this before you flash
-const char* ssid = "nanoguest";
-const char* password = "WelcomeToNTT";
+const char* ssid = "wireless";
+const char* password = "********";
 
 boolean wifiConnected = false;
 
@@ -40,8 +40,8 @@ Switch *eSwitch = NULL;
 
 void setup()
 {
-  Serial.begin(9600);
-  delay(1000);
+  Serial.begin(74880);
+  delay(5000);
   Serial.println("Adding switches upnp broadcast responder"); 
   // Initialise wifi connection
   wifiConnected = connectWifi();
